@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>HOME</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+    <ul>
+        <li><a href="java.html">JAVA</a></li>
+        <li><a href="cplusplus.html">C++</a></li>
+        <li><a href="tinkercad.html">TINKERCAD</a></li>
+    </ul>
+  </div>
+</nav>
+  <section id="top-section" class="top-section">
+    <h1>Deseja conhecer mais sobre programação?</h1>
+    <button class="scroll-btn" id="scroll-to-cards-btn">SIM!</button>
+  </section>
+  <br>
+  <section id="cards-section" class="cards-section">
+    <div class="card">
+      <img src="java.jpg" alt="Image 1" class="card-img">
+      <div class="card-content">
+        <h2 class="card-title"><span class="jv">Java</span></h2>
+        <p class="card-text"> <a href="java.html">Clique aqui e venha conhecer mais sobre essa linguagem de programação!</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="cplusp.jpg" alt="Image 2" class="card-img">
+      <div class="card-content">
+        <h2 class="card-title"><span class="cpp">C++</span></h2>
+        <p class="card-text"><a href="cplusplus.html">Clique aqui e venha conhecer mais sobre essa linguagem de programação!</a></p>
+      </div>
+    </div>
+    <br>
+    <div class="card">
+      <img src="blococod.jpg" alt="Image 3" class="card-img">
+      <div class="card-content">
+        <h2 class="card-title"><span class="tkc">TinkerCad</span></h2>
+        <p class="card-text"><a href="tinkercad.html">Venha conhecer mais sobre essa linguagem de programação!</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="progn.jpg" alt="Image 4" class="card-img">
+      <div class="card-content">
+        <h2 class="card-title"><span class="tll">Tipos de Linguagens</span></h2>
+        <p class="card-text">Quer descobrir o que é linguagem baixo e alto nível e entender um pouco mais sobre o mundo da programação?<br> <span class="ds">Deslize para baixo!</span></p>
+        <br>
+      </div>
+    </div>
+  </section>
+  <section id="bottom-section" class="bottom-section">
+    <h2>Linguagem Baixo Nível</h2>
+    <br>
+    <p id="class">Assembly As - Linguagens de baixo nível, como Assembly, estão muito próximas do código de máquina, que é o código executado diretamente pelo processador do computador. <br> Eles fornecem um controle direto sobre o hardware, o que permite otimizar o desempenho do sistema, mas, por outro lado, são muito difíceis de entender e escrever<br>O Assembly é específico para cada tipo de processador, e seu uso exige conhecimento profundo da arquitetura da máquina</p>
+    <br>
+    <h2>Linguagem Alto Nível</h2>
+    <br>
+    <p>Linguagens de Alto Nível, como <a href="cplusplus.html"><span class="cpp">C++</span></a> , (em branco) e <a href="java.html"><span class="jv">Java</span></a> , (em preto) estão mais próximos da linguagem humana, sendo muito mais simples de aprender e usar. Eles são independentes da arquitetura do processador, ou seja, o mesmo código pode rodar em diferentes plataformas, desde que um compilador ou uma máquina virtual esteja disponível. Essas linguagens abstraem os detalhes de baixo nível, permitindo que os programadores se concentrem em resolver problemas mais complexos sem se preocuparem tanto com o hardware.</p>
+    <br>
+    <div class="image-container">
+    <img class="cods" src="cplusp.jpg" alt="Imagem 1">
+    <img class="cods"src="java.jpg" alt="Imagem 2">
+    </div>
+  </section>
+  
+  <script>
+    document.getElementById('scroll-to-cards-btn').onclick = () => {
+      document.getElementById('cards-section').scrollIntoView({ behavior: 'smooth' });
+    }
+    </script>
+    </body>
+    </html>

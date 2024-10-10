@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>JAVA</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="cplusplus.html">C++</a></li>
+            <li><a href="tinkercad.html">TINKERCAD</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+        <h1>JAVA</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>O que é o Java?</h2>
+            <p>Java é uma linguagem de programação de propósito geral, orientada a objetos, que foi desenvolvida pela Sun Microsystems (hoje parte da Oracle) e lançada em 1995. Sua combinação de portabilidade, segurança e uma vasta coleção de bibliotecas faz dela uma escolha versátil para desenvolvedores em diversas áreas. Com uma comunidade ativa e um ecossistema rico, Java está bem posicionado para continuar a ser uma linguagem relevante e eficaz no futuro, tendo sua utilização em: Desenvolvimento de Aplicações Web, Jogos, etc...</p>
+        </section>
+        <section>
+            <h2>Código em Java</h2>
+            <h2>Imagem</h2>
+            <img src="java.jpg" alt="Descrição da Imagem 2">
+            <h2>Texto</h2>
+            <p>import java.util.Scanner; <br>
+                public class programa04 { <br>
+                public static void main(String[] args) {<br>
+                Scanner sc = new Scanner(System.in); <br>
+                        int pot1 = 0, pot2 = 0, res = 0; <br>
+                
+                        boolean led = false;<br>
+                        System.out.println("Digite o valor do sensor potenciômetro 1: ");<br>
+                        pot1 = sc.nextInt();<br>
+                        System.out.println("Digite o valor do sensor potenciômetro 2: ");<br>
+                        pot2 = sc.nextInt();<br>
+                
+                        if (pot1 > pot2) {<br>
+                            res += pot1 + pot2;<br>
+                            System.out.printf("A resposta é: %d ", res);<br>
+                            led = true;<br>
+                        } else {<br>
+                            led = false;<br>
+                        }<br>
+                        sc.close();<br>
+                }</p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    </body>
+    </html>
+    

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>c++</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="java.html">JAVA</a></li>
+            <li><a href="tinkercad.html">TINKERCAD</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+        <h1>C++</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>O que é o C++?</h2>
+            <p>C++ é uma linguagem de programação de propósito geral, amplamente utilizada, que foi desenvolvida por Bjarne Stroustrup no início dos anos 1980 como uma extensão da linguagem C. É conhecida por sua eficiência e flexibilidade, e oferece suporte a diversos paradigmas de programação, incluindo programação procedural, orientada a objetos e programação genérica. As habilidades adquiridas no C++ são valiosas e transferíveis para outras linguagens de programação.</p>
+        </section>
+        <section>
+            <h2>Código em C++</h2>
+            <h2> Utilizando IDE Arduíno imagem</h2>
+            <img src="cplusp.jpg" alt="Descrição da Imagem 2">
+            <h2>Código C++ Texto</h2>
+            <p>//C++ code <br>
+                int pot1 = 0, pot2 = 0, res = 0;<br>
+                
+                void setup()<br>
+                {<br>
+                  pinMode(A1, INPUT);<br>
+                  pinMode(12, OUTPUT);<br>
+                  pinMode(A0, INPUT);<br>
+                  Serial.begin(9600);<br>
+                  pot1 = 10;<br>
+                  pot2 = analogRead(A1);<br>
+                  res = 0;<br>
+                  digitalWrite(12, LOW);<br>
+                }<br>
+                void loop()<br>
+                {<br>
+                  pot1 += analogRead(A0);<br>
+                  Serial.println("pot1 -----------------------------");<br>
+                  Serial.println(pot1);<br>
+                  pot2 += analogRead(A1);<br>
+                  Serial.println("pot2 -----------------------------");<br>
+                  Serial.println(pot2);<br>
+                  
+                  if (pot1 > pot2) {<br>
+                    res += (pot1 + pot2);<br>
+                    Serial.println("res -----------------------------");<br>
+                    Serial.println(res);<br>
+                    digitalWrite(12, HIGH);<br>
+                  } else {<br>
+                    digitalWrite(12, LOW);<br>
+                  }<br>
+                  delay(1); // Wait for 1 millisecond(s)<br>
+                }
+                </p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    </body>
+    </html>
+    
